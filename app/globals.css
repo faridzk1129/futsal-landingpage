@@ -22,3 +22,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Hilangkan scrollbar - Chrome, Safari, Edge */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hilangkan scrollbar - IE, Edge lama */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+}
+
+/* Hilangkan scrollbar - Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+}

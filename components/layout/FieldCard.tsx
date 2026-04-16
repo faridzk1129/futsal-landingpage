@@ -36,7 +36,7 @@ export default function FieldCard() {
   return (
     <section className="w-full py-16 px-8 sm:px-12 lg:px-42">
       {/* Section Title */}
-      <h2 className="text-gray-800 font-bold text-3xl text-center mb-8">Lapangan</h2>
+      <h2 className="text-gray-800 font-bold text-3xl text-center mb-12">Lapangan</h2>
 
       {/* Cards */}
       <div className="flex flex-col gap-16">
