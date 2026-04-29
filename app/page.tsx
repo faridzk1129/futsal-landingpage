@@ -1,10 +1,10 @@
 import Hero from "@/components/layout/Hero";
 import Navbar from "@/components/layout/Navbar";
-import FasilitasSection from "@/components/layout/FasilitasSection";
+import FacilitySection from "@/components/layout/FacilitySection";
 import FieldCard from "@/components/layout/FieldCard";
-import TestimoniSection from "@/components/layout/TestimoniSection";
+import TestimonialSection from "@/components/layout/TestimonialSection";
 import GallerySection from "@/components/layout/GallerySection";
-import LokasiSection from "@/components/layout/LokasiSection";
+import LocationSection from "@/components/layout/LocationSection";
 import BookingButtonSection from "@/components/layout/BookingButtonSection";
 import Footer from "@/components/layout/Footer";
 
@@ -14,11 +14,11 @@ export default function Home() {
       <div className="relative bg-primary flex flex-col px-4 sm:px-6 lg:px-24 w-full items-center">
         <Navbar />
         <Hero />
-        <FasilitasSection />
+        <FacilitySection />
         <FieldCard />
-        <TestimoniSection />
+        <TestimonialSection />
         <GallerySection />
-        <LokasiSection />
+        <LocationSection />
         <BookingButtonSection />
         <Footer />
       </div>

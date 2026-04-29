@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,7 +7,7 @@ type Field = {
   name: string;
   price: string;
   image: string;
-  bookingHref: string;
+  bookingType: string; // Tambahkan ini untuk parameter URL
   buttonColor: string;
   blurPosition: "left" | "right";
 };
@@ -17,7 +18,7 @@ const fieldList: Field[] = [
     name: "Lapangan Rumput",
     price: "150k",
     image: "/img/lapangan-rumput-sintesis.png",
-    bookingHref: "/booking-field-1",
+    bookingType: "sintesis", // Parameter untuk Rumput Sintesis
     buttonColor: "bg-[#89B100] hover:bg-[#7a9e00]",
     blurPosition: "left",
   },
@@ -26,12 +27,11 @@ const fieldList: Field[] = [
     name: "Lapangan Vinyl",
     price: "150k",
     image: "/img/lapangan-vinyl.png",
-    bookingHref: "/booking-field-2",
+    bookingType: "vinyl", // Parameter untuk Vinyl
     buttonColor: "bg-[#4E6ED9] hover:bg-[#3d5ec8]",
     blurPosition: "right",
   },
 ];
-
 export default function FieldCard() {
   return (
     <section className="w-full py-16 px-8 sm:px-12 lg:px-42">
@@ -72,8 +72,9 @@ export default function FieldCard() {
                 `}
               >
                 {/* Booking Button */}
+                {/* UPDATE: Href menggunakan query parameter */}
                 <Link
-                  href={field.bookingHref}
+                  href={`/booking-field?type=${field.bookingType}`}
                   className={`${field.buttonColor} text-white font-bold text-sm sm:text-base px-4 py-2 rounded-lg transition-colors duration-200`}
                 >
                   Booking

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const fasilitasList = [
+const facilityList = [
   {
     id: "parkir",
     icon: "/parking.svg",
@@ -27,12 +27,12 @@ const fasilitasList = [
   },
 ];
 
-export default function FasilitasSection() {
+export default function FacilitySection() {
   return (
     <section className="w-full py-10 mt-24 flex flex-col gap-7">
       <h2 className="text-gray-800 font-bold text-2xl lg:text-3xl text-center mb-8">Fasilitas</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-12">
-        {fasilitasList.map((item) => (
+        {facilityList.map((item) => (
           <div
             key={item.id}
             className="bg-white shadow-sm flex flex-col items-center justify-center gap-8 py-16"

@@ -1,4 +1,4 @@
-export default function LokasiSection() {
+export default function LocationSection() {
   return (
     <section className="w-full py-16 px-4 sm:px-8 lg:px-24">
       <h2 className="text-gray-800 font-bold text-3xl sm:text-4xl text-center mb-10">Lokasi</h2>

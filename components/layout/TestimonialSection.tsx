@@ -41,7 +41,7 @@ const testimoniList: Testimoni[] = [
   },
 ];
 
-export default function TestimoniSection() {
+export default function TestimonialSection() {
   return (
     <section className="w-full py-16 px-8 sm:px-12 lg:px-42">
       <h2 className="text-gray-800 font-bold text-3xl text-center mb-16 leading-snug">
@@ -73,7 +73,7 @@ export default function TestimoniSection() {
                   <p className="text-gray-400 text-xs">{item.role}</p>
                   <div className="flex gap-1 mt-1">
                     {Array.from({ length: item.rating }).map((_, i) => (
-                      <Star key={i} size={14} className="text-purple-500 fill-purple-500" />
+                      <Star key={i} size={14} className="text-blue-500 fill-blue-500" />
                     ))}
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function TestimoniSection() {
               {/* Card nama + foto offside */}
               <div className="relative w-64 md:w-72 shrink-0">
                 <div
-                  className={`bg-[#faf6ff] rounded-2xl p-12 md:py-16 shadow-sm flex flex-col justify-center gap-2
+                  className={`bg-[#ffffff] rounded-2xl p-12 md:py-16 shadow-md flex flex-col justify-center gap-2
     ${item.cardPosition === "left" ? "pr-24 pl-8" : "pl-24 pr-8"}
   `}
                 >
@@ -108,7 +108,7 @@ export default function TestimoniSection() {
                   <p className="text-gray-500 text-sm">{item.role}</p>
                   <div className="flex gap-1 mt-1">
                     {Array.from({ length: item.rating }).map((_, i) => (
-                      <Star key={i} size={18} className="text-purple-500 fill-purple-500" />
+                      <Star key={i} size={18} className="text-blue-500 fill-blue-500" />
                     ))}
                   </div>
                 </div>

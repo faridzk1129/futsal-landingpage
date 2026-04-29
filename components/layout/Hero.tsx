@@ -74,7 +74,7 @@ export default function Hero() {
           {/* Booking Button */}
           <div className="flex items-center justify-center px-4 py-5">
             <Link
-              href="/booking-field-1"
+              href="/booking-field"
               className="w-full text-center bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold text-sm sm:text-base py-4 px-6 rounded-xl transition-colors duration-200 shadow-md"
             >
               Booking

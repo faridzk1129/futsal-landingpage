@@ -5,8 +5,8 @@ import Link from "next/link";
 import { X, Menu } from "lucide-react";
 
 const navLinks = [
-  { href: "/booking-field-1", label: "Booking" },
-  { href: "/", label: "Tentang" },
+  { href: "/", label: "Home" },
+  { href: "/booking-field", label: "Booking" },
   { href: "/schedule", label: "Jadwal" },
 ];
 
